@@ -37,3 +37,41 @@
 .standart-section{
   padding: 120px 0;
 }
+.events-wrap{
+  padding: 75px 0;
+  .event-item-img{
+    position: relative;
+    cursor: pointer;
+    &:hover{
+      .on-img-hover{
+        opacity: 1;
+      }
+    }
+    img{
+      width: 100%;
+    }
+  }
+  .on-img-hover{
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, .3);
+    transition: all .5s linear;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .icon-wrap{
+      text-align: center;
+      line-height: 60px;
+      height: 60px;
+      width: 60px;
+      background-color: #cf1b41;
+      color: #fff;
+      font-size: 25px;
+      border-radius: 50%;
+    }
+  }
+}
