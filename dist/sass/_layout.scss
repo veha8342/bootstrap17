@@ -75,3 +75,16 @@
     }
   }
 }
+.section-w-bg{
+  padding: 50px 0;
+  min-height: 480px;
+  display: flex;
+  align-items: center;
+  &.story{
+    color: #fff;
+    background-image: url("../../app/img/our-story.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+  }
+}

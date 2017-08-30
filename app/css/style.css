@@ -6160,6 +6160,24 @@ button {
       -webkit-border-radius: 50%;
               border-radius: 50%; }
 
+.section-w-bg {
+  padding: 50px 0;
+  min-height: 480px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .section-w-bg.story {
+    color: #fff;
+    background-image: url("../../app/img/our-story.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center; }
+
 /* Preload images */
 body:after {
   content: url(../img/close.png) url(../img/loading.gif) url(../img/prev.png) url(../img/next.png);
