@@ -39,6 +39,12 @@
 }
 .events-wrap{
   padding: 75px 0;
+  dl{
+    display: inline-block;
+    &+dl{
+      margin-left: 18px;
+    }
+  }
   .event-item-img{
     position: relative;
     cursor: pointer;
@@ -51,6 +57,7 @@
       width: 100%;
     }
   }
+
   .on-img-hover{
     opacity: 0;
     position: absolute;
@@ -87,4 +94,62 @@
     background-size: cover;
     background-position: top center;
   }
+  &.buy-goods{
+    color: #fff;
+    background-image: url("../../app/img/share-img.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+  }
+  &.best-donors{
+    .best-donors-wrap{
+      margin-top: 13vh;
+      .donors-icon{
+        width: 120px;
+        dl{
+          margin-top: 17px;
+        }
+      }
+    }
+  }
 }
+
+.help-wrap{
+  padding: 17vh 0;
+  h3{
+    color: $gray-dark;
+  }
+  .donate-block{
+    margin-top: 90px;
+    .donate{
+      display: inline-flex;
+      flex-direction: row;
+      & + .donate{
+        margin-top: 10vh;
+      }
+      .circle{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 80px;
+        height: 80px;
+        border-radius: 80px;
+        border: 2px solid #ece8f1;
+        transform: translateY(-15px);
+        margin-right: 20px;
+      }
+    }
+  }
+}
+
+.footer-text{
+  padding: 37px 0 27px 0;
+  background-color: #202020;
+  display: flex;
+  justify-content: space-around;
+}
+
+
+//.img-circle{
+//  transform: rotate(90deg);
+//}
