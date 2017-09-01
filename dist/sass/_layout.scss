@@ -57,6 +57,13 @@
       width: 100%;
     }
   }
+  .country{
+    display: inline-block;
+  }
+  .event-item-location::before{
+    font-family: 'Glyphicons Halflings';
+    content: "\e062";
+  }
 
   .on-img-hover{
     opacity: 0;
@@ -141,7 +148,7 @@
     }
   }
 }
-
+glyphicon glyphicon-map-marker
 .footer-text{
   padding: 37px 0 27px 0;
   background-color: #202020;
