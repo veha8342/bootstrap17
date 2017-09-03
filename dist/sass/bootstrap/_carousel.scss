@@ -223,7 +223,7 @@
   z-index: 10;
   //padding-top: 20px;
   //padding-bottom: 20px;
-  min-width: 720px;
+  max-width: 720px;
   margin: 0 auto;
   color: $carousel-caption-color;
   text-align: center;
@@ -233,6 +233,7 @@
   }
   h3{
     color: $gray-dark;
+    margin-bottom: 25px;
   }
 }
 

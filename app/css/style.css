@@ -5722,14 +5722,15 @@ button.close {
 
 .carousel-caption {
   z-index: 10;
-  min-width: 720px;
+  max-width: 720px;
   margin: 0 auto;
   color: #807996;
   text-align: center; }
   .carousel-caption .btn {
     text-shadow: none; }
   .carousel-caption h3 {
-    color: #150c31; }
+    color: #150c31;
+    margin-bottom: 25px; }
 
 @media screen and (min-width: 768px) {
   .carousel-control .glyphicon-chevron-left,
@@ -6106,14 +6107,15 @@ button {
     text-align: center;
     padding-top: 17vh; }
     .inner .inner-title h1 {
-      margin-bottom: 2vh; }
+      margin-bottom: 3vh; }
     .inner .inner-title .btn {
       margin-top: 9vh; }
     .inner .inner-title p {
       padding: 0 5vw;
       font-size: 18px; }
   .inner .inner-advantages {
-    padding-bottom: 6.5vh; }
+    margin-top: 16vh;
+    padding-bottom: 7.5vh; }
 
 .standart-section {
   padding: 120px 0; }
@@ -6122,6 +6124,9 @@ button {
   padding: 75px 0; }
   .events-wrap dl {
     display: inline-block; }
+    .events-wrap dl > dt {
+      font-family: 'montserratsemibold';
+      color: #150c31; }
     .events-wrap dl + dl {
       margin-left: 18px; }
   .events-wrap .event-item-img {
@@ -6131,12 +6136,20 @@ button {
       opacity: 1; }
     .events-wrap .event-item-img img {
       width: 100%; }
+  .events-wrap .title {
+    font-size: 16px;
+    font-family: 'montserratsemibold';
+    margin-top: 25px;
+    margin-bottom: 10px; }
   .events-wrap .country {
     display: inline-block;
-    margin-top: 20px; }
+    margin-top: 20px;
+    font-family: 'montserratsemibold';
+    color: #150c31; }
   .events-wrap .event-item-location::before {
     font-family: 'Glyphicons Halflings';
-    content: "\e062"; }
+    content: "\e062";
+    color: #150c31; }
   .events-wrap .on-img-hover {
     opacity: 0;
     position: absolute;
@@ -6196,15 +6209,20 @@ button {
     .section-w-bg.buy-goods h4 {
       font-size: 25px;
       color: #150c31;
-      font-family: 'montserratregular'; }
+      font-family: 'montserratregular';
+      margin-bottom: 20px; }
     .section-w-bg.buy-goods p {
-      color: #807996; }
+      color: #807996;
+      margin-bottom: 30px; }
   .section-w-bg.best-donors .best-donors-wrap {
     margin-top: 13vh; }
     .section-w-bg.best-donors .best-donors-wrap .donors-icon {
       width: 120px; }
       .section-w-bg.best-donors .best-donors-wrap .donors-icon dl {
         margin-top: 17px; }
+        .section-w-bg.best-donors .best-donors-wrap .donors-icon dl > dt {
+          font-family: 'montserratsemibold';
+          color: #150c31; }
 
 .help-wrap {
   padding: 17vh 0; }
@@ -6212,6 +6230,8 @@ button {
     color: #150c31; }
   .help-wrap .donate-block {
     margin-top: 90px; }
+    .help-wrap .donate-block .row + .row {
+      margin-top: 10vh; }
     .help-wrap .donate-block .donate {
       display: -webkit-inline-box;
       display: -webkit-inline-flex;
@@ -6222,8 +6242,6 @@ button {
       -webkit-flex-direction: row;
           -ms-flex-direction: row;
               flex-direction: row; }
-      .help-wrap .donate-block .donate + .donate {
-        margin-top: 10vh; }
       .help-wrap .donate-block .donate .circle {
         display: -webkit-box;
         display: -webkit-flex;

@@ -20,7 +20,7 @@
     text-align: center;
     padding-top: 17vh;
     h1{
-      margin-bottom: 2vh;
+      margin-bottom: 3vh;
     }
     .btn{
       margin-top: 9vh;
@@ -31,7 +31,8 @@
     }
   }
   .inner-advantages{
-    padding-bottom: 6.5vh;
+    margin-top: 16vh;
+    padding-bottom: 7.5vh;
   }
 }
 .standart-section{
@@ -41,6 +42,10 @@
   padding: 75px 0;
   dl{
     display: inline-block;
+    &>dt{
+      font-family: 'montserratsemibold';
+      color: $gray-dark;
+    }
     &+dl{
       margin-left: 18px;
     }
@@ -57,13 +62,22 @@
       width: 100%;
     }
   }
+  .title{
+    font-size: 16px;
+    font-family: 'montserratsemibold';
+    margin-top: 25px;
+    margin-bottom: 10px;
+  }
   .country{
     display: inline-block;
     margin-top: 20px;
+    font-family: 'montserratsemibold';
+    color: $gray-dark;
   }
   .event-item-location::before{
     font-family: 'Glyphicons Halflings';
     content: "\e062";
+    color: $gray-dark;
   }
 
   .on-img-hover{
@@ -112,9 +126,11 @@
       font-size: 25px;
       color: $gray-dark;
       font-family: 'montserratregular';
+      margin-bottom: 20px;
     }
     p{
       color: $gray-base;
+      margin-bottom: 30px;
     }
   }
   &.best-donors{
@@ -124,6 +140,10 @@
         width: 120px;
         dl{
           margin-top: 17px;
+          & > dt{
+            font-family: 'montserratsemibold';
+            color: $gray-dark;
+          }
         }
       }
     }
@@ -137,12 +157,12 @@
   }
   .donate-block{
     margin-top: 90px;
+    .row + .row{
+      margin-top: 10vh;
+    }
     .donate{
       display: inline-flex;
       flex-direction: row;
-      & + .donate{
-        margin-top: 10vh;
-      }
       .circle{
         display: flex;
         align-items: center;
