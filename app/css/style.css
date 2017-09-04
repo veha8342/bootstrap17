@@ -6074,6 +6074,11 @@ button {
   cursor: pointer;
   padding: 0; }
 
+header.on-scroll {
+  background-color: #333;
+  -webkit-transition: all 1s linear;
+  transition: all 1s linear; }
+
 .inner {
   height: 100vh;
   background-image: url("../../app/img/inner-bg.png");
@@ -6100,6 +6105,10 @@ button {
   -webkit-align-content: space-between;
       -ms-flex-line-pack: justify;
           align-content: space-between; }
+  @media (max-width: 1023px) {
+    .inner {
+      height: auto;
+      padding-bottom: 50px; } }
   .inner p {
     color: rgba(255, 255, 255, 0.6);
     font-size: 12px; }
@@ -6215,14 +6224,23 @@ button {
       color: #807996;
       margin-bottom: 30px; }
   .section-w-bg.best-donors .best-donors-wrap {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
     margin-top: 13vh; }
-    .section-w-bg.best-donors .best-donors-wrap .donors-icon {
-      width: 120px; }
-      .section-w-bg.best-donors .best-donors-wrap .donors-icon dl {
-        margin-top: 17px; }
-        .section-w-bg.best-donors .best-donors-wrap .donors-icon dl > dt {
-          font-family: 'montserratsemibold';
-          color: #150c31; }
+    .section-w-bg.best-donors .best-donors-wrap .donors-icon dl {
+      margin-top: 17px; }
+      .section-w-bg.best-donors .best-donors-wrap .donors-icon dl > dt {
+        font-family: 'montserratsemibold';
+        color: #150c31; }
 
 .help-wrap {
   padding: 17vh 0; }
