@@ -3895,6 +3895,25 @@ tbody.collapse.in {
 
 .navbar-nav {
   margin: 20px -15px; }
+  @media (max-width: 768px) {
+    .navbar-nav {
+      margin-left: 15px; } }
+  @media (max-width: 690px) {
+    .navbar-nav.navbar-nav {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: row;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      margin-left: -15px; } }
   .navbar-nav > li > a {
     padding-top: 10px;
     padding-bottom: 10px;
@@ -5703,6 +5722,9 @@ button.close {
   padding-left: 0;
   list-style: none;
   text-align: center; }
+  @media (max-width: 768px) {
+    .carousel-indicators {
+      bottom: -30px; } }
   .carousel-indicators li {
     display: inline-block;
     width: 10px;
@@ -6125,6 +6147,11 @@ header.on-scroll {
   .inner .inner-advantages {
     margin-top: 16vh;
     padding-bottom: 7.5vh; }
+    .inner .inner-advantages span {
+      display: inline-block;
+      margin-bottom: 20px; }
+    .inner .inner-advantages p {
+      margin-bottom: 20px; }
 
 .standart-section {
   padding: 120px 0; }
@@ -6260,6 +6287,9 @@ header.on-scroll {
       -webkit-flex-direction: row;
           -ms-flex-direction: row;
               flex-direction: row; }
+      @media (max-width: 768px) {
+        .help-wrap .donate-block .donate:nth-child(even) {
+          margin-top: 50px; } }
       .help-wrap .donate-block .donate .circle {
         display: -webkit-box;
         display: -webkit-flex;
@@ -6294,6 +6324,13 @@ header.on-scroll {
       -ms-flex-pack: distribute;
           justify-content: space-around;
   color: #fff; }
+  @media (max-width: 590px) {
+    .footer-text {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column; } }
   .footer-text .footer-link {
     display: -webkit-box;
     display: -webkit-flex;

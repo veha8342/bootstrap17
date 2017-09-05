@@ -44,6 +44,13 @@ header{
   .inner-advantages{
     margin-top: 16vh;
     padding-bottom: 7.5vh;
+    span{
+      display: inline-block;
+      margin-bottom: 20px;
+    }
+    p{
+      margin-bottom: 20px;
+    }
   }
 }
 .standart-section{
@@ -177,6 +184,11 @@ header{
     .donate{
       display: inline-flex;
       flex-direction: row;
+      @media(max-width: 768px){
+        &:nth-child(even){
+          margin-top: 50px;
+        }
+      }
       .circle{
         display: flex;
         align-items: center;
@@ -198,6 +210,9 @@ header{
   display: flex;
   justify-content: space-around;
   color: #fff;
+  @media(max-width: 590px){
+    flex-direction: column;
+  }
   .footer-link{
     display: flex;
     align-items: center;
